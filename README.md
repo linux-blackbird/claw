@@ -1,2 +1,2 @@
-# sddm-yuros
+# yuros login themes
 yuros login themes
