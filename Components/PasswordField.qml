@@ -19,8 +19,8 @@ TextField {
   horizontalAlignment: TextInput.AlignHCenter
   background: Rectangle {
     id: passFieldBackground
-    radius: 13
-    color: config.surface0
+    radius: 5
+    color: config.surface1
   }
   states: [
     State {
@@ -28,7 +28,7 @@ TextField {
       when: passwordField.activeFocus
       PropertyChanges {
         target: passFieldBackground
-        color: config.surface1
+        color: config.surface0
       }
     },
     State {
@@ -36,7 +36,7 @@ TextField {
       when: passwordField.hovered
       PropertyChanges {
         target: passFieldBackground
-        color: config.surface1
+        color: config.surface0
       }
     }
   ]

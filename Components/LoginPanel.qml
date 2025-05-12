@@ -6,7 +6,7 @@ Item {
   property var user: userField.text
   property var password: passwordField.text
   property var session: sessionPanel.session
-  property var inputHeight: Screen.height * 0.032
+  property var inputHeight: Screen.height * 0.040
   property var inputWidth: Screen.width * 0.16
   Rectangle {
     id: loginBackground
@@ -83,12 +83,12 @@ Item {
         }
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-        color: config.crust
+        color: config.white
         text: "Login"
       }
       background: Rectangle {
         id: buttonBackground
-        color: config.sapphire
+        color: config.blue
         radius: 3
       }
       states: [
@@ -97,7 +97,7 @@ Item {
           when: loginButton.down
           PropertyChanges {
             target: buttonBackground
-            color: config.teal
+            color: config.twitter
           }
           PropertyChanges {
             target: buttonText
@@ -108,7 +108,7 @@ Item {
           when: loginButton.hovered
           PropertyChanges {
             target: buttonBackground
-            color: config.teal
+            color: config.twitter
           }
           PropertyChanges {
             target: buttonText

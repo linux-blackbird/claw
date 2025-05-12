@@ -21,8 +21,8 @@ TextField {
   text: userModel.lastUser
   background: Rectangle {
     id: userFieldBackground
-    color: config.surface0
-    radius: 13
+    color: config.surface1
+    radius: 5
   }
   states: [
     State {
@@ -30,7 +30,7 @@ TextField {
       when: userField.activeFocus
       PropertyChanges {
         target: userFieldBackground
-        color: config.surface1
+        color: config.surface0
       }
     },
     State {
@@ -38,7 +38,7 @@ TextField {
       when: userField.hovered
       PropertyChanges {
         target: userFieldBackground
-        color: config.surface1
+        color: config.surface0
       }
     }
   ]
