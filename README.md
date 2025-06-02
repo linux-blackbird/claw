@@ -1,2 +1,2 @@
-# yuros login themes
-yuros login themes
+# sysmain
+system config protocol level 01
